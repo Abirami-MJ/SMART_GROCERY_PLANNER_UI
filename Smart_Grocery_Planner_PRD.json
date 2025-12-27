@@ -1,0 +1,95 @@
+{
+  "document_type": "Project Requirement Document (PRD)",
+  "project_name": "Smart Grocery Planning UI",
+  "tagline": "Visualize freshness. Reduce waste. Eat smarter.",
+  "problem_statement": "Users forget grocery expiry dates leading to food waste, health risks, and financial loss. Existing apps focus on lists instead of freshness awareness.",
+  "vision": "Build a visual-first, elder-friendly grocery planning UI that predicts waste risk and simplifies food decisions.",
+  "target_users": [
+    "Elderly users",
+    "Busy professionals",
+    "Households"
+  ],
+  "core_goals": [
+    "Reduce food waste",
+    "Improve health safety",
+    "Ease of use",
+    "Accessibility-first design"
+  ],
+  "design_principles": [
+    "Time should be felt, not calculated",
+    "Color and motion convey urgency",
+    "One screen, one decision",
+    "Accessibility is mandatory"
+  ],
+  "time_simulation": {
+    "demo_rule": "1 day = 10 seconds",
+    "purpose": "Visualize expiry decay in real time"
+  },
+  "functional_requirements": {
+    "grocery_entry": [
+      "Item name",
+      "Category",
+      "Expiry in days",
+      "Quantity"
+    ],
+    "expiry_visualization": {
+      "progress_bar": {
+        "safe": "Green (>50%)",
+        "warning": "Yellow (<=50%)",
+        "critical": "Red flashing (<=20%)",
+        "expired": "Grey (0%)"
+      },
+      "animation": "CSS transitions with JS timers"
+    },
+    "smart_alerts": [
+      "Warning alerts at 50%",
+      "Critical alerts at 20% with flashing",
+      "Optional voice alerts for elders"
+    ]
+  },
+  "navigation_structure": [
+    "Dashboard",
+    "Add Grocery",
+    "Live Expiry Tracker",
+    "Smart Alerts",
+    "Consume Today",
+    "Waste Analytics",
+    "Elder Mode",
+    "Settings"
+  ],
+  "page_requirements": {
+    "dashboard": "Overview of grocery health and food score",
+    "add_grocery": "Simple one-click form",
+    "expiry_tracker": "Animated decay bars sorted by urgency",
+    "consume_today": "Auto-suggest items expiring soon",
+    "analytics": "Weekly waste and savings trends",
+    "elder_mode": "Large fonts, high contrast, voice alerts"
+  },
+  "non_functional_requirements": {
+    "usability": "No training required",
+    "performance": "Smooth animations without lag",
+    "accessibility": "WCAG compliant, color-independent cues"
+  },
+  "advanced_features": [
+    "Food health score",
+    "Emotional feedback messages",
+    "Future ML expiry prediction hooks"
+  ],
+  "success_metrics": [
+    "Reduced expired items",
+    "Daily user engagement",
+    "Elder usability without assistance"
+  ],
+  "sdg_alignment": [
+    "SDG 2 \u2013 Zero Hunger",
+    "SDG 3 \u2013 Good Health & Well-being",
+    "SDG 12 \u2013 Responsible Consumption"
+  ],
+  "mvp_definition": [
+    "Add groceries",
+    "Animated expiry bars",
+    "Correct alert triggers",
+    "Elder-friendly usability"
+  ],
+  "long_term_vision": "Evolve into a smart household food assistant with ML, voice-first UI, and automated planning."
+}
