@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/react-refresh'
 
 export default defineConfig({
   base: '/SMART_GLOCERY_PLANNER_UI/',
