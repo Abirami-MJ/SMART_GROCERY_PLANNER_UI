@@ -10,22 +10,23 @@ function Button({
   className = '',
   ...props 
 }) {
-  const baseClasses = 'inline-flex items-center justify-center font-medium rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-offset-2'
+  const baseClasses = 'inline-flex items-center justify-center font-medium rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 transform hover:scale-105 active:scale-95 shadow-lg'
   
   const variants = {
-    primary: 'bg-primary text-white hover:bg-blue-600 focus:ring-primary disabled:bg-gray-300',
-    secondary: 'bg-surface text-text border border-border hover:bg-gray-50 focus:ring-primary disabled:bg-gray-100',
-    success: 'bg-safe text-white hover:bg-green-600 focus:ring-safe disabled:bg-gray-300',
-    warning: 'bg-warning text-white hover:bg-yellow-600 focus:ring-warning disabled:bg-gray-300',
-    danger: 'bg-critical text-white hover:bg-red-600 focus:ring-critical disabled:bg-gray-300',
-    ghost: 'text-text hover:bg-surface focus:ring-primary disabled:text-gray-400'
+    primary: 'bg-gradient-primary text-white hover:shadow-xl focus:ring-primary disabled:bg-gray-300 disabled:transform-none',
+    secondary: 'bg-white/90 backdrop-blur-sm text-gray-700 border border-white/20 hover:bg-white hover:shadow-xl focus:ring-primary disabled:bg-gray-100',
+    success: 'bg-gradient-success text-white hover:shadow-xl focus:ring-safe disabled:bg-gray-300 disabled:transform-none',
+    warning: 'bg-gradient-warning text-white hover:shadow-xl focus:ring-warning disabled:bg-gray-300 disabled:transform-none',
+    danger: 'bg-gradient-danger text-white hover:shadow-xl focus:ring-critical disabled:bg-gray-300 disabled:transform-none',
+    ghost: 'text-white/80 hover:bg-white/10 hover:text-white focus:ring-primary disabled:text-gray-400 shadow-none',
+    glass: 'glass text-white hover:bg-white/20 focus:ring-primary'
   }
   
   const sizes = {
-    sm: 'px-3 py-2 text-sm',
-    md: 'px-4 py-2 text-base',
-    lg: 'px-6 py-3 text-lg',
-    xl: 'px-8 py-4 text-xl'
+    sm: 'px-4 py-2 text-sm',
+    md: 'px-6 py-3 text-base',
+    lg: 'px-8 py-4 text-lg',
+    xl: 'px-10 py-5 text-xl'
   }
   
   const classes = `${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`

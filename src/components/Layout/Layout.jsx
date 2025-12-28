@@ -24,13 +24,15 @@ function Layout({ children }) {
   }
 
   return (
-    <div className={`min-h-screen bg-surface ${settings.elderMode ? 'elder-mode' : ''}`}>
+    <div className={`min-h-screen ${settings.elderMode ? 'elder-mode' : ''}`}>
       <Header title={getPageTitle()} />
-      <div className="flex">
+      <div className="flex min-h-screen">
         <Navigation />
-        <div className="flex-1 p-4 md:p-6 lg:p-8">
-          <div className="container mx-auto max-w-6xl">
-            {children}
+        <div className="flex-1 p-6 md:p-8 lg:p-12">
+          <div className="container mx-auto max-w-7xl">
+            <div className="space-y-8">
+              {children}
+            </div>
           </div>
         </div>
       </div>
